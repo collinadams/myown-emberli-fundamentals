@@ -1,7 +1,19 @@
 <h1>Hello Class</h1>
 
-{{make-name "mike" "north" uppercase=true}}
+{{!-- {{#x-input 
+    value="My value" 
+    label="My field label"}}
+    <span>Content projection here</span>
+{{/x-input}} --}}
+
+<ul>
+    {{#each courses as |course|}}
+        {{course-list-item model=course}}
+    {{/each}}
+</ul>
+
+{{!-- {{make-name "mike" "north" uppercase=true}}
 {{placeholder-url w=502 h=301}}
-<img src="{{placeholder-url w=502 h=301}}" alt="">
+<img src="{{placeholder-url w=502 h=301}}" alt=""> --}}
 
 {{outlet}}
