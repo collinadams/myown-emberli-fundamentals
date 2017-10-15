@@ -1,6 +1,15 @@
-<h1>Hello Class</h1>
+<h1>Courses</h1>
+{{outlet}}
 
-{{two-inputs str="ember Fundamentals"}}
+{{!-- <ul>
+    {{#each courses as |course|}}
+        <li>
+            {{link-to "Go to {{course.title}}" course course}}
+        </li>
+    {{/each}}
+</ul> --}}
+
+{{!-- {{two-inputs str="ember Fundamentals"}} --}}
 
 {{!-- {{#x-input 
     value="My value" 
@@ -17,5 +26,3 @@
 {{!-- {{make-name "mike" "north" uppercase=true}}
 {{placeholder-url w=502 h=301}}
 <img src="{{placeholder-url w=502 h=301}}" alt=""> --}}
-
-{{outlet}}
